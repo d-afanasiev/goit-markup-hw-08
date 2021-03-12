@@ -1,0 +1,40 @@
+.filter__button {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  letter-spacing: 0.03em;
+  padding: 6px 22px;
+  border: 0px solid transparent;
+  outline: transparent;
+  border-radius: 4px;
+  background-color: $bg-section;
+  color: $color-main;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover, &:focus {
+    cursor: pointer;
+    background-color: $color-link;
+    color: $color-hero;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+
+}
+
+.filter__list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+  margin-bottom: 50px;
+}
+
+.filer__items {
+  margin-right: 8px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}

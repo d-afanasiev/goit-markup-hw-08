@@ -1,0 +1,146 @@
+.footer {
+  background-color: $bg-footer;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer__container {
+  display: flex;
+}
+
+.address {
+  margin-top: 20px;
+  color: $color-hero;
+}
+
+.address__list {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+.footer__logo {
+  color: $color-hero;
+}
+
+.address__link {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.address__item {
+  margin-bottom: 9px;
+}
+
+.footer__address {
+  margin-right: 70px;
+}
+
+.join__text {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $color-hero;
+  margin-top: 12px;
+  margin-bottom: 20px;
+}
+
+.join__list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+.join__item {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  margin-right: 10px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.join__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    background-color: $color-link;
+  }
+}
+
+.join__icon {
+  fill: $color-hero;
+}
+
+.join {
+  margin-right: 93px;
+}
+
+.distribution__text {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $color-hero;
+  margin-top: 12px;
+  margin-bottom: 20px;
+}
+
+.distribution__input {
+  width: 358px;
+  background-color: $bg-footer;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  padding: 15px 16px;
+  color: rgba(255, 255, 255, 0.6);
+  outline: none;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-right: 12px;
+
+  &::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  &:focus {
+    border: 1px solid $color-link;
+  }
+}
+
+.distribution__button {
+  display: inline-flex;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  padding: 10px 29px;
+  letter-spacing: 0.06em;
+  color: $color-hero;
+  background-color: $color-link;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.distribution__icon {
+  margin-left: 10px;
+  fill: $color-hero;
+}

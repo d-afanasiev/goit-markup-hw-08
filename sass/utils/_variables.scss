@@ -1,0 +1,24 @@
+$color-link: #2196F3;
+$color-button: #188CE8;
+$color-logo: #000000;
+$color-main: #212121;
+$color-secondary: #757575;
+$color-hero: #ffffff;
+$bg-hero: #2F303A;
+$bg-section: #F5F4FA;
+$bg-footer: #2F303A;
+$icon-social: #AFB1B8;
+$header-border: #ECECEC;
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.2;
+  background-color: $color-hero;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
