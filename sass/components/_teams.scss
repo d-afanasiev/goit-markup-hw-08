@@ -1,21 +1,29 @@
 .teams__title {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
+  line-height: 1.18;
+  // font-size: 36px;
   text-align: center;
   letter-spacing: 0.03em;
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+  // margin-bottom: 50px;
   color: $color-main;
 }
 
 .teams {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  // padding-top: 94px;
+  // padding-bottom: 94px;
   background-color: $bg-section;
 }
 
 .teams__list {
-  display: flex;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
   list-style: none;
   margin: 0;
   padding-left: 0;
@@ -30,14 +38,17 @@
 }
 
 .teams__items {
-  width: calc((100% - 90px) / 4);
+  width: 100%;
+  margin-bottom: 30px;
+  // width: calc((100% - 90px) / 4);
   background: $color-hero;
-  margin-right: 30px;
+  // margin-right: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 
   &:last-child {
     margin-right: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -63,10 +74,19 @@
 
 .social {
   display: flex;
+  justify-content: center;
   list-style: none;
   margin: 0;
   padding-left: 0;
-  justify-content: space-around;
+  // justify-content: space-around;
+}
+
+.social__item {
+  margin-right: 10px;
+
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .social__link {

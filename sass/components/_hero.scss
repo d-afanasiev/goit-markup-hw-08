@@ -14,7 +14,8 @@
 }
 
 .hero__container {
-  width: 646px;
+  // width: 646px;
+  width: 370px;
 }
 
 .hero__btn {
@@ -36,8 +37,10 @@
 
 .hero__title {
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
+  // font-size: 44px;
+  // line-height: 1.36;
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 30px;
