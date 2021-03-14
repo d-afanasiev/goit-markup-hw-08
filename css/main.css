@@ -70,10 +70,23 @@ body {
 }
 
 .nav__list {
-  display: none;
   list-style: none;
   margin: 0;
   padding-left: 0;
+}
+
+@media screen and (max-width: 480px) {
+  .nav__list {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 481px) {
+  .nav__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .header .container {
@@ -81,11 +94,24 @@ body {
 }
 
 .contacts-list {
-  display: none;
   list-style: none;
   margin: 0;
   padding-left: 0;
   margin-left: auto;
+}
+
+@media screen and (max-width: 480px) {
+  .contacts-list {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 481px) {
+  .contacts-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .nav__link,
@@ -1110,14 +1136,30 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   list-style: none;
   margin: 0;
   padding-left: 0;
   margin-bottom: 50px;
 }
 
+@media screen and (max-width: 480px) {
+  .filter__list {
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+  }
+}
+
 .filer__items {
   margin-right: 8px;
+}
+
+@media screen and (max-width: 480px) {
+  .filer__items:nth-child(-n + 3) {
+    margin-bottom: 15px;
+  }
 }
 
 .filer__items:last-child {
@@ -1149,13 +1191,15 @@ body {
   color: #757575;
 }
 
-.portfolio,
-.portfolio__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+@media screen and (min-width: 768px) {
+  .portfolio,
+  .portfolio__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .portfolio__list {
@@ -1172,9 +1216,14 @@ body {
 }
 
 .portfolio__item {
-  width: calc((100% - 60px) / 3);
-  margin-right: 30px;
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio__item {
+    width: calc((100% - 60px) / 3);
+    margin-right: 30px;
+  }
 }
 
 .portfolio__item:nth-child(3n) {

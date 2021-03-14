@@ -15,7 +15,12 @@
 }
 
 .nav__list {
-  display: none;
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
+  @media screen and (min-width: 481px) {
+    display: flex;
+  }
   // display: flex;
   list-style: none;
   margin: 0;
@@ -29,7 +34,12 @@
 }
 
 .contacts-list {
-  display: none;
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
+  @media screen and (min-width: 481px) {
+    display: flex;
+  }
   // display: flex;
   list-style: none;
   margin: 0;
