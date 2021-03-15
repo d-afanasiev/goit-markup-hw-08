@@ -14,8 +14,10 @@
 }
 
 .hero__container {
-  // width: 646px;
   width: 370px;
+  @media screen and (min-width: 1200px) {
+    width: 646px;
+  }
 }
 
 .hero__btn {
@@ -39,10 +41,13 @@
   font-weight: 900;
   font-size: 26px;
   line-height: 1.62;
-  // font-size: 44px;
-  // line-height: 1.36;
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 30px;
   color: $color-hero;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }

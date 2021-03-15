@@ -34,6 +34,10 @@
   @media screen and (max-width: 480px) {
     justify-content: left;
   }
+
+  @media screen and (max-width: 768px) {
+    margin-bottom: 30px;
+  }
 }
 
 .filer__items {

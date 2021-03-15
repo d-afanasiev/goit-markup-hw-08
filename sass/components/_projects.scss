@@ -2,6 +2,10 @@
   display: none;
   padding-bottom: 94px;
   padding-top: 0;
+
+  @media screen and (min-width:1200px) {
+    display: block;
+  }
 }
 
 .projects__image {

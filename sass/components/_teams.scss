@@ -2,21 +2,27 @@
   font-weight: 700;
   font-size: 28px;
   line-height: 1.18;
-  // font-size: 36px;
   text-align: center;
   letter-spacing: 0.03em;
   margin-top: 0;
   margin-bottom: 30px;
-  // margin-bottom: 50px;
   color: $color-main;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
 }
 
 .teams {
   padding-top: 60px;
   padding-bottom: 60px;
-  // padding-top: 94px;
-  // padding-bottom: 94px;
   background-color: $bg-section;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .teams__list {
@@ -40,15 +46,28 @@
 .teams__items {
   width: 100%;
   margin-bottom: 30px;
-  // width: calc((100% - 90px) / 4);
   background: $color-hero;
-  // margin-right: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 
-  &:last-child {
-    margin-right: 0;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: calc((100% - 30px) / 2);
+    margin-right: 30px;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 90px) / 4);
+    margin-right: 30px;
     margin-bottom: 0;
+
+    &:last-child {
+      margin-right: 0;
+      margin-bottom: 0;
+    }
   }
 }
 
