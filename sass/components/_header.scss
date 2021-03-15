@@ -15,10 +15,10 @@
 }
 
 .nav__list {
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 767px) {
     display: none;
   }
-  @media screen and (min-width: 481px) {
+  @media screen and (min-width: 768px) {
     display: flex;
   }
   // display: flex;
@@ -34,13 +34,11 @@
 }
 
 .contacts-list {
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 767px) {
     display: none;
   }
-  @media screen and (min-width: 481px) {
-    display: flex;
-  }
   @media screen and (min-width: 768px) {
+    display: flex;
     flex-direction: column;
   }
   @media screen and (min-width: 1200px) {
