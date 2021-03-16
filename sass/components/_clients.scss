@@ -37,7 +37,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: inherit;
   height: 90px;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
@@ -68,7 +67,8 @@
 
 .clients__item {
   margin-bottom: 30px;
-  width: 210px;
+  // width: 210px;
+  width: calc((100% - 30px) / 2);
 
   &:last-child {
     margin-bottom: 0;
