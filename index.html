@@ -44,6 +44,11 @@
                         +38 096 111 11 11</a>
                 </li>
             </ul>
+            <button type="button" class="mobile-menu" aria-expanded="false" aria-controls="menu-container" data-menu-button>
+                <svg class="mobile-menu__icon" width="24px" height="16px">
+                    <use href="./images/symbol-defs.svg#mobile-menu"></use>
+                </svg>
+            </button>
         </div>
     </header>
     <main>
@@ -128,7 +133,7 @@
                 <h2 class="teams__title">Наша команда</h2>
                 <ul class="teams__list">
                     <li class="teams__items">
-                        <img src="./images/prod.jpg" alt="На фотографии Игорь Демьяненко" width="270" height="260" class="teams__image">
+                        <img srcset="./images/prod-450.jpg 1x, ./images/prod-450@2x.jpg 2x" src="./images/prod-450.jpg" alt="На фотографии Игорь Демьяненко" width="450" height="460" class="teams__image">
                         <div class="teams__content">
                             <h3 class="teams__subtitle">Игорь Демьяненко</h3>
                             <p class="teams__text">Product Designer</p>
@@ -165,7 +170,7 @@
                         </div>
                         </li>
                     <li class="teams__items">
-                        <img src="./images/dev.jpg" alt="На фотографии Ольга Репина" width="270" height="260" class="teams__image">
+                        <img srcset="./images/dev-450.jpg 1x, ./images/dev-450@2x.jpg 2x" src="./images/dev-450.jpg" alt="На фотографии Ольга Репина" width="450" height="460" class="teams__image">
                         <div class="teams__content">
                             <h3 class="teams__subtitle">Ольга Репина</h3>
                             <p class="teams__text">Frontend Developer</p>
@@ -202,7 +207,7 @@
                         </div>
                         </li>
                     <li class="teams__items">
-                        <img src="./images/mark.jpg" alt="На фотографии Николай Тарасов" width="270" height="260" class="teams__image">
+                        <img srcset="./images/mark-450.jpg 1x, ./images/mark-450@2x.jpg 2x" src="./images/mark-450.jpg" alt="На фотографии Николай Тарасов" width="450" height="460" class="teams__image">
                         <div class="teams__content">
                             <h3 class="teams__subtitle">Николай Тарасов</h3>
                             <p class="teams__text">Marketing</p>
@@ -239,7 +244,7 @@
                         </div>
                         </li>
                     <li class="teams__items">
-                        <img src="./images/ui.jpg" alt="На фотографии Михаил Ермаков" width="270" height="260" class="teams__image">
+                        <img srcset="./images/ui-450.jpg 1x, ./images/ui-450@2x.jpg 2x" src="./images/ui-450.jpg" alt="На фотографии Михаил Ермаков" width="450" height="460" class="teams__image">
                         <div class="teams__content">
                             <h3 class="teams__subtitle">Михаил Ермаков</h3>
                             <p class="teams__text">UI Designer</p>
@@ -445,5 +450,6 @@
         </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 </html>

@@ -5,6 +5,9 @@
 .header__container {
   display: flex;
   align-items: center;
+  @media screen and (max-width: 767px) {
+    justify-content: space-between;
+  }
 }
 
 .nav {
@@ -161,5 +164,20 @@
     height: 16px;
     background-image: url(../images/smartphone.svg);
     margin-right: 10px;
+  }
+}
+
+.mobile-menu {
+  display: none;
+
+  @media screen and (max-width: 767px) {
+    display: flex;
+    border: none;
+    padding: 12px 8px;
+    background-color: $color-hero;
+
+    &:hover, &:focus {
+      fill: $color-link;
+    }
   }
 }
