@@ -55,25 +55,31 @@ img {
   color: #000000;
 }
 
+@media screen and (min-width: 768px) {
+  .logo {
+    font-size: 26px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header__container .logo {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+}
+
+.is-open .logo {
+  display: none;
+}
+
 .header {
   border-bottom: 1px solid #ECECEC;
 }
 
 .header__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-@media screen and (max-width: 767px) {
-  .header__container {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
+  position: relative;
 }
 
 @media screen and (min-width: 768px) {
@@ -210,12 +216,8 @@ img {
   }
 }
 
-.nav__item:nth-child(n + 1) {
+.nav__item:not(:last-child) {
   margin-right: 50px;
-}
-
-.nav__item:last-child {
-  margin-right: 0;
 }
 
 .contacts-list__item:last-child {
@@ -263,12 +265,15 @@ img {
   margin-right: 10px;
 }
 
-.mobile-menu {
+.mobile-button {
   display: none;
 }
 
 @media screen and (max-width: 767px) {
-  .mobile-menu {
+  .mobile-button {
+    position: absolute;
+    top: 20px;
+    right: 15px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -276,9 +281,55 @@ img {
     padding: 12px 8px;
     background-color: #ffffff;
   }
-  .mobile-menu:hover, .mobile-menu:focus {
+  .mobile-button:hover, .mobile-button:focus {
     fill: #2196F3;
   }
+}
+
+.header__container.is-open {
+  height: 100vh;
+  background-color: #ffffff;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 48px 40px;
+}
+
+.header__container.is-open .nav__list {
+  display: block;
+}
+
+.header__container.is-open .contacts-list {
+  display: block;
+}
+
+@media screen and (min-width: 767px) {
+  .mobile-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .mobile-menu .nav__item:not(:last-child) {
+    margin-right: 0;
+  }
+}
+
+.mobile-button__cross {
+  display: none;
+}
+
+.mobile-button.is-open .mobile-button__menu {
+  display: none;
+}
+
+.mobile-button.is-open .mobile-button__cross {
+  display: block;
 }
 
 .hero__overlay {

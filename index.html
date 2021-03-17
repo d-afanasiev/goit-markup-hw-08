@@ -11,42 +11,45 @@
 </head>
 <body>
     <header class="header">
-        <div class="container header__container">
-            <nav class="nav">
-                <a href="./index.html" class="logo">
-                    <span class="logo--color">Web</span>Studio
-                </a>
-                <ul class="nav__list">
-                    <li class="nav__item">
-                        <a href="./index.html" class="nav__link nav__active">Студия</a>
+        <div class="container header__container" data-menu>
+            <div class="mobile-menu">
+                <nav class="nav">
+                    <a href="./index.html" class="logo">
+                        <span class="logo--color">Web</span>Studio
+                    </a>
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="./index.html" class="nav__link nav__active">Студия</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="./portfolio.html" class="nav__link">Портфолио</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="" class="nav__link">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>    
+                <ul class="contacts-list">
+                    <li class="contacts-list__item">
+                        <a href="mailto:info@devstudio.com" class="contacts-list__link">
+                            <svg class="contacts-list__icon" width="16" height="12">
+                                <use href="./images/symbol-defs.svg#icon-envelope"></use>
+                            </svg>
+                            info@devstudio.com</a>
                     </li>
-                    <li class="nav__item">
-                        <a href="./portfolio.html" class="nav__link">Портфолио</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="" class="nav__link">Контакты</a>
+                    <li class="contacts-list__item">
+                        <a href="tel:+380961111111" class="contacts-list__link">
+                            <svg class="contacts-list__icon" width="10" height="16">
+                                <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+                            </svg>
+                            +38 096 111 11 11</a>
                     </li>
                 </ul>
-            </nav>    
-            <ul class="contacts-list">
-                <li class="contacts-list__item">
-                    <a href="mailto:info@devstudio.com" class="contacts-list__link">
-                        <svg class="contacts-list__icon" width="16" height="12">
-                            <use href="./images/symbol-defs.svg#icon-envelope"></use>
-                        </svg>
-                        info@devstudio.com</a>
-                </li>
-                <li class="contacts-list__item">
-                    <a href="tel:+380961111111" class="contacts-list__link">
-                        <svg class="contacts-list__icon" width="10" height="16">
-                            <use href="./images/symbol-defs.svg#icon-smartphone"></use>
-                        </svg>
-                        +38 096 111 11 11</a>
-                </li>
-            </ul>
-            <button type="button" class="mobile-menu" aria-expanded="false" aria-controls="menu-container" data-menu-button>
-                <svg class="mobile-menu__icon" width="24px" height="16px">
-                    <use href="./images/symbol-defs.svg#mobile-menu"></use>
+            </div>
+            <button type="button" class="mobile-button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
+                <svg class="mobile-button__icon" width="24px" height="16px">
+                    <use class="mobile-button__menu" href="./images/symbol-defs.svg#mobile-menu"></use>
+                    <use class="mobile-button__cross" href="./images/symbol-defs.svg#mobile-close"></use>
                 </svg>
             </button>
         </div>
