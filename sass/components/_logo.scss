@@ -19,17 +19,3 @@
   }
 
 }
-
-@media screen and (max-width: 767px) {
-  .header__container {
-    .logo {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-    }
-  }
-}
-
-.is-open .logo {
-  display: none;
-}
