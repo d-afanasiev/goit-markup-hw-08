@@ -366,6 +366,7 @@ img {
 .mobile-contacts__link {
   text-decoration: none;
   color: #757575;
+  white-space: nowrap;
 }
 
 .mobile-social {
