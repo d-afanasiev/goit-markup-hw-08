@@ -359,6 +359,10 @@ img {
   padding: 0;
 }
 
+.mobile-contacts__item {
+  margin-bottom: 32px;
+}
+
 .mobile-contacts__item:first-child .mobile-contacts__link {
   color: #2196F3;
 }
