@@ -7,6 +7,7 @@
     const isMenuOpen =
       openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
     openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
+    document.body.classList.toggle("modal-open");
     mobileMenu.classList.toggle('is-open');
   };
 
