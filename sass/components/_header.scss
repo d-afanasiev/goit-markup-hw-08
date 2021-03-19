@@ -200,7 +200,7 @@
 }
 
 .menu-container {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
@@ -281,7 +281,9 @@
   letter-spacing: 0.02em;
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 0 0 0 -10px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .mobile-social__list {
