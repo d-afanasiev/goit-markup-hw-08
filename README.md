@@ -1,1 +1,3 @@
-# goit-markup-hw-08
+# WEBSTUDIO
+
+Websites with responsive design
